@@ -25,6 +25,6 @@ Fetching weather through the open weather map.
 - Sqlite
 - Flake8
 
-This backend is deployed to heroku available here https://ewallet-app-pio.herokuapp.com/
+This backend is deployed to heroku available here https://?
 
-The API Documentation can be accessed here https://documenter.getpostman.com/view/18769850/UVXhpGcP
+The API Documentation can be accessed here https://?
