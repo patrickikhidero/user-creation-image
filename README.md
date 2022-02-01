@@ -25,6 +25,11 @@ Fetching weather through the open weather map.
 - Sqlite
 - Flake8
 
+## ScreenShot
+
+<img src="https://user-images.githubusercontent.com/80291797/151944932-f4ebf91c-af65-4818-bac5-43866a553119.png" width="45%"></img> <img src="https://user-images.githubusercontent.com/80291797/151944946-d3dc586d-ac6c-4563-8d74-7473f9c8c0e9.png" width="45%"></img> <img src="https://user-images.githubusercontent.com/80291797/151944973-5b50b969-223e-45ad-947f-3ef611f65a40.png" width="45%"></img> <img src="https://user-images.githubusercontent.com/80291797/151944993-9a91eec5-dfcc-4425-8b14-8e5a3ad749e9.png" width="45%"></img> 
+
+
 This backend is deployed to heroku available here https://?
 
 The API Documentation can be accessed here https://?
