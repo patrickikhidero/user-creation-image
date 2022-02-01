@@ -128,10 +128,16 @@ EMAIL_USE_SSL = True
 
 # cloudinary configuration
 
+# cloudinary.config( 
+#   cloud_name = config("user_name", default='annoy'), 
+#   api_key = config("api_key", default='annoy_key'), 
+#   api_secret = config("api_secret", default='annnoy_personal')
+# )
+
 cloudinary.config( 
-  cloud_name = config("user_name", default='annoy'), 
-  api_key = config("api_key", default='annoy_key'), 
-  api_secret = config("api_secret", default='annnoy_personal')
+  cloud_name = "codepreneur", 
+  api_key = "864511245224269", 
+  api_secret = "PzXOqnYoCIOnSXvlDvfL-3Gl4MQ"
 )
 
 
