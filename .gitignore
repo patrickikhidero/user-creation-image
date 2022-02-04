@@ -4,10 +4,8 @@ __pycache__/
 /static/images/.DS_Store
 /.DS_Store
 /static/.DS_Store
-.env
+
 .env1
-/.env
-.env/
 venv
 env/
 /env
