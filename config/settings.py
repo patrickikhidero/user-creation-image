@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'rest_framework',
     # 'django.contrib.staticfiles',
     'drf_yasg',
-    
+
 
     # locals
     'api',
@@ -150,17 +150,13 @@ USE_I18N = True
 USE_TZ = True
 
 
-# Static files (CSS, JavaScript, Images)
-
-# Default primary key field type
-# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-prod_db  =  dj_database_url.config(conn_max_age=500)
+prod_db = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(prod_db)
 
 # Add configuration for static files storage using whitenoise
-# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 

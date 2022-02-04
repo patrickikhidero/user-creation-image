@@ -1,5 +1,3 @@
-from operator import ge
-from django.shortcuts import render
 from rest_framework import generics, status
 from .serializers import RegisterSerializers, EditProfileSerializer
 from rest_framework.response import Response
