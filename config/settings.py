@@ -23,7 +23,7 @@ SECRET_KEY = 'django-insecure-7g9a8#$g#hw@-p9f81@m(z&coi2zvn!$l(4pdtly^7t+^0!hm0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['198.211.99.20', 'localhost', '127.0.0.1','https://user-creationapp.herokuapp.com/', 'https://user-creationapp.herokuapp.com',]
+ALLOWED_HOSTS = ['*',]
 
 
 # Application definition
@@ -94,10 +94,21 @@ AUTH_USER_MODEL = 'api.User'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': config('DB_NAME', 'e-user'),
+        'USER': config('DB_USER_NAME', 'patrick'),
+        'PASSWORD': config('DB_USER_PASSWORD', 'postgres'),
+        'HOST':config('DB_HOST', 'localhost'),
+        'PORT': 5432,
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 
 
 
@@ -158,7 +169,7 @@ prod_db = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(prod_db)
 
 # Add configuration for static files storage using whitenoise
-# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
@@ -171,5 +182,3 @@ STATICFILES_DIRS = (
     os.path.join(PROJECT_ROOT, 'static'),
 )
 
-#  Add configuration for static files storage using whitenoise
-STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
