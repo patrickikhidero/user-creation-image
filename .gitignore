@@ -5,7 +5,7 @@ __pycache__/
 /.DS_Store
 /static/.DS_Store
 
-.env1
+.env
 venv
 env/
 /env

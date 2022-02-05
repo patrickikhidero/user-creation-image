@@ -1,9 +1,9 @@
-## Building A Creation End point
+## Building A User Creation End point
 
 ### User Creation  --> (Backend Assessment)
  
 ## Description
-Create a endpoints that allows user creation, upload user image, connect to external API and send email. On user creation, send a dummy email to the user's email address, also, connect to free external api either currency and weather through the endpoint you create.
+Create an endpoints that allows user creation, upload user image, connect to external API and send email. On user creation, send a dummy email to the user's email address, also, connect to free external api either currency and weather through the endpoint you create.
 
 ### User
 a User is referred as an individual using the the application.
@@ -27,4 +27,3 @@ Fetching weather through the open weather map.
 
 This backend is deployed to heroku available here https://ewallet-app-pio.herokuapp.com/
 
-The API Documentation can be accessed here https://documenter.getpostman.com/view/18769850/UVXhpGcP
